@@ -1124,41 +1124,41 @@ let jobs = {
         }
     ]
 }
-//toan bo job hits
-console.log(jobs.hits);
+// //toan bo job hits
+// console.log(jobs.hits);
 
-//job hits dau tien
-console.log(jobs.hits[0]);
+// //job hits dau tien
+// console.log(jobs.hits[0]);
 
-//Lấy jobTitlte của first job hit
-console.log(jobs.hits[0]["jobTitle"]);
+// //Lấy jobTitlte của first job hit
+// console.log(jobs.hits[0]["jobTitle"]);
 
-//Lấy benefit của first job hit
-console.log(jobs.hits[0]["benefits"]);
+// //Lấy benefit của first job hit
+// console.log(jobs.hits[0]["benefits"]);
 
-//In ra valuebenefits của benefits của first job hit 
-for(let i = 0; i < jobs.hits[0]["benefits"].length; i++){
-    console.log(jobs.hits[0]["benefits"][i]["benefitValue"]);
-}
+// //In ra valuebenefits của benefits của first job hit 
+// for(let i = 0; i < jobs.hits[0]["benefits"].length; i++){
+//     console.log(jobs.hits[0]["benefits"][i]["benefitValue"]);
+// }
 
-//In ra toàn bộ jobTitle và benefitValue của toàn bộ job hits
-for(let i = 0; i < jobs.hits.length; i++){
-    console.log(jobs.hits[i]["jobTitle"]);
-    console.log("Benefits:");
-    for(let j = 0; j < jobs.hits[i]["benefits"].length; j++){
-        console.log("-", jobs.hits[i]["benefits"][j].benefitValue);
-    }
-}
+// //In ra toàn bộ jobTitle và benefitValue của toàn bộ job hits
+// for(let i = 0; i < jobs.hits.length; i++){
+//     console.log(jobs.hits[i]["jobTitle"]);
+//     console.log("Benefits:");
+//     for(let j = 0; j < jobs.hits[i]["benefits"].length; j++){
+//         console.log("-", jobs.hits[i]["benefits"][j].benefitValue);
+//     }
+// }
 
-//In ra toàn bộ jobTitle, locations, skills, jobSalary của toàn bộ job hits
-for(let i = 0; i < jobs.hits.length; i++){
-    console.log("Title:", jobs.hits[i]["jobTitle"]);
-    console.log("Salary:", jobs.hits[i]["jobSalary"]+"$");
-    console.log("Locations:\n-", ...jobs.hits[i]["locations"]);
-    console.log("Skills:\n-", ...jobs.hits[i]["skills"]);
+// //In ra toàn bộ jobTitle, locations, skills, jobSalary của toàn bộ job hits
+// for(let i = 0; i < jobs.hits.length; i++){
+//     console.log("Title:", jobs.hits[i]["jobTitle"]);
+//     console.log("Salary:", jobs.hits[i]["jobSalary"]+"$");
+//     console.log("Locations:\n-", ...jobs.hits[i]["locations"]);
+//     console.log("Skills:\n-", ...jobs.hits[i]["skills"]);
 
-    console.log("Benefits:");
-    for(let j = 0; j < jobs.hits[i]["benefits"].length; j++){
-        console.log("-", jobs.hits[i]["benefits"][j].benefitValue);
-    }
-}
+//     console.log("Benefits:");
+//     for(let j = 0; j < jobs.hits[i]["benefits"].length; j++){
+//         console.log("-", jobs.hits[i]["benefits"][j].benefitValue);
+//     }
+// }
