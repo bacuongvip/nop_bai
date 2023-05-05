@@ -99,4 +99,8 @@ button.onclick = function(e) {
         localStorage.setItem("users", JSON.stringify(users));
         window.location.href = "user.html";
     }
+    overlay.onclick = function() {
+        box.style.display = "none";
+        overlay.style.display = "none";
+    }
 }
