@@ -1,0 +1,70 @@
+.login .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login .container .logo {
+    margin: 100px 0px 50px;
+}
+.login .container .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.content .sign {
+    width: 250px;
+    background-color: #ff5d15;
+    color: #fffff0;
+    line-height: 40px;
+    border-bottom: 2px solid #b4b4b8;
+}
+.content .sign a {
+    text-decoration: none;
+    color: aliceblue;
+}
+.content .sign {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.content .sign:last-child {
+    background-color: #ffffff;
+}
+.container .main {
+    width: 500px;
+}
+.login .main{
+    background-color: #f6f6f6;
+}
+.form .content input {
+    width: 100%;
+    border-style: none;
+    padding-inline: 10px;
+}
+.main .form .content:first-child{
+    margin-top: 50px;
+}
+.main .form .content:last-child{
+    margin-bottom: 50px;
+}
+.form .content button {
+    width: 100%;
+    color: #f6f6f6;
+    background-color: #ff5d15;
+    border-style: none;
+}
+.main .form .content {
+    margin: 20px 50px 0px 50px;
+    line-height: 40px;
+}
+.main .form .content > input,button,.content{
+    border-radius: 5px;
+}
+.main .form .content:nth-child(5) {
+    background-color: #3c5b9a;
+    color: #f6f6f6;
+    font-weight: bold;
+}
+.main .form .content:nth-child(6) {
+    background-color: #ffff;
+    border: 1px solid #c6c6c6;
+}

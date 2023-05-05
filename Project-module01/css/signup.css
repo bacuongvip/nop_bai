@@ -1,0 +1,6 @@
+.content .sign:first-child {
+    background-color: #ffffff;
+}
+.content .sign:last-child {
+    background-color: #ff5d15;
+}

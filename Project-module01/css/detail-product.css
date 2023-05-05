@@ -1,0 +1,131 @@
+.topRedBar {
+    height: 70px;
+    border-bottom: 5px solid red;
+    margin-bottom: 50px;
+}
+.row .left{
+    border: 1px solid #dbdbdb;
+    padding: 0;
+    line-height: 500px;
+}
+.row .left img {
+    height: 350px;
+    width: 100%;
+}
+.row .right {
+    padding-left: 50px;
+    height: 500px;
+    position: relative;
+}
+.row .right img {
+    height: 120px;
+    margin-bottom: 30px;
+}
+.row .right h2 {
+    margin-bottom: 30px;
+}
+.right .buy-item {
+    border-top: 1px solid #191919;
+    border-bottom: 1px solid #191919;
+    line-height: 60px;
+    padding-left: 10px;
+}
+.buy-item select {
+    width: 60px;
+    border-radius: 4px;
+    margin-left: 20px;
+    text-align: center;
+}
+.right .button {
+    border-radius: 5px;
+    width: 250px;
+    line-height: 50px;
+    border-style: none;
+    background-color: #f53f25;
+    color: #fff;
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 0;
+}
+.notice div {
+    margin-top: 80px;
+    font-size: 2em;
+    color: #f53f25;
+    font-weight: 600;
+}
+.notice ul {
+    padding: 20px;
+}
+
+/* Payment */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 998;
+    transition: opacity 0.5s ease;
+    display: none;
+}
+  
+.box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    z-index: 999;
+    width: 500px;
+    border-radius: 10px;
+    transition: opacity 0.5s ease;
+    display: none;
+}
+.box .container {
+    margin: 0 auto;
+    width: 330px;
+}
+.box .container div{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.topBar {
+    border-bottom: 3px solid red;
+}
+.container .img img {
+    width: 306px;
+    height: 200px;
+}
+.box .container .brand {
+    font-size: 1em;
+}
+.box .container .content {
+    font-size: 1.3em;
+}
+.box .container .content2 {
+    color: red;
+    padding: 8px;
+    border-bottom: 5px solid #cccccc;
+}
+.box .container .content3 {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cccccc;
+}
+.container .content3 .result {
+    font-weight: bold;
+}
+.container .content3 .total {
+    color: red;
+    font-weight: 500;
+}
+.box .container .buy {
+    background-color: #f53f25;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    border-radius: 3px;
+    color: aliceblue;
+    line-height: 35px;
+    cursor: pointer;
+}
