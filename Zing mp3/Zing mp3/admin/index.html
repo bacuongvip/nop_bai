@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./style.css" />
+
+  <title>Admin</title>
+</head>
+
+<body>
+  <div class="header">
+    <img
+      src="https://c.wallhere.com/photos/ea/93/1920x1080_px_EDM_headphones_Monstercat_music_music_festival-529221.jpg!d"
+      alt="">
+  </div>
+  <div class="container-fluid text-center">
+    <div class="row">
+      <div class="col-4">
+        <h3>Thêm bài hát</h3>
+        <form id="main-form">
+          <div class="mb-3">
+            <label>Tên bài hát</label>
+            <input type="text" id="namemusic" name="namemusic" required />
+          </div>
+          <div class="mb-3">
+            <label>Tên ca sĩ</label>
+            <input type="text" id="namehuman" name="namehuman" required />
+          </div>
+          <div class="mb-3">
+            <label>Ảnh đại diện</label>
+            <input type="text" id="picture" name="picture" required />
+          </div>
+          <div class="mb-3">
+            <label>Link music</label>
+            <input type="text" id="link-music" name="linkmusic" required />
+          </div>
+          <div class="mb-3">
+            <select name="selection" class="selection">
+              <option selected>Choose...</option>
+              <option value="VN" data="VN">Việt Nam</option>
+              <option value="IN" data="IN">Quốc tế</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Save add</button>
+        </form>
+      </div>
+      <div class="col-7">
+        <h3>Danh sách bài hát</h3>
+        <div class="mb-4">
+          <label>Tìm kiếm bài hát</label>
+          <input type="text" id="search" name="search" />
+          <button id="btn-search">Search</button>
+        </div>
+        <div>
+          <table class="table container-music">
+            <thead>
+              <tr>
+                <th scope="col">STT</th>
+                <th scope="col">Tên bài hát</th>
+                <th scope="col">Tên ca sĩ</th>
+                <th scope="col">Ảnh nền đại diện</th>
+                <th scope="col">Bài hát</th>
+                <th scope="col" data="">Phân loại</th>
+                <th scope="col">Hành động</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+            <tbody>
+              <!-- <tr>
+                <td scope="col">1</td>
+                <td scope="col">Bo xi bo</td>
+                <td scope="col">Hoàng Thùy Linh</td>
+                <td scope="col"><a href="../Image music/boxibo.jpg" target="_blank">Link</a></td>
+                <td scope="col"><a href="../List Music/BoXiBo-HoangThuyLinh-7702270.mp3">
+                    Link</a>
+                </td>
+                <td>VN</td>
+                <td> <button type="button" class="btn btn-primary">Edit</button>
+                  <button type="button" class="btn btn-danger">Delete</button>
+                </td>
+              </tr> -->
+            </tbody>
+          </table>
+        </div>
+        <ul class="pagination">
+          <li class="pagination-item">
+            <div class="pagination-item_link">
+              <i class="pagination-item_icon fas fa-angle-left"></i>
+            </div>
+          </li>
+          <li class="pagination-item pagination-item--active">
+            <div class="pagination-item_link">
+              1
+            </div>
+          </li>
+          <li class="pagination-item">
+            <div class="pagination-item_link">
+              2
+            </div>
+          </li>
+          <li class="pagination-item">
+            <div class="pagination-item_link">
+              3
+            </div>
+          </li>
+          <li class="pagination-item">
+            <div class="pagination-item_link">
+              ...
+            </div>
+          </li>
+
+          <li class="pagination-item btn-next">
+            <div class="pagination-item_link">
+              <i class="pagination-item_icon fas fa-angle-right"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>

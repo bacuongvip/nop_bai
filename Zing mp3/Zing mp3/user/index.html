@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zing mp3</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./slick.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> 
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
+</head>
+
+<body>
+    <div class="text-left container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="zm-section mz-list inline">
+                    <div class="img-h1">
+                        <a href="http://127.0.0.1:5500/user/index.html" class="image">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/ZingMP3logo.svg/320px-ZingMP3logo.svg.png"
+                                alt="">
+                        </a>
+                    </div><br>
+                    <div class="ic_bar ">
+                        <div class="header-ic sp">
+                            <i class="fa-solid fa-bars nav"></i>
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="content">
+                            <div class="menu-sp">
+                                <div class="btn_ic active sp">
+                                    <i class="fa-solid fa-cloud"></i>
+                                </div>
+                                <div class="btn_ic sp">
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="btn-create sp">
+                                    <!-- <a class="sp" href="#"><i class="fa-solid fa-plus"></i></a> -->
+                                    <a href="#"><i class="fa-solid fa-plus"></i> Tạo playlist mới</a>
+                                </div>
+                            </div>
+                            <hr class="sp">
+                            <div class="btn-menu-content">
+                                <div class=" tab active">
+                                    <div class="menu">
+                                        <div>
+                                            <a href="#"><i class="fa-solid fa-music"></i> Thư viện</a>
+                                        </div>
+                                        <div>
+                                            <a href=""><i class="fa-solid fa-record-vinyl"></i> Khám phá</a>
+                                        </div>
+                                        <div>
+                                            <a href=""><i class="fa-solid fa-sliders"></i> #zingchart</a>
+                                        </div>
+                                        <div>
+                                            <a href=""><i class="fa-solid fa-radio"></i> Radio</a>
+                                        </div>
+                                        <div>
+                                            <a href=""><i class="fa-brands fa-squarespace"></i> Theo dõi</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class=" tab">
+                                    <div class="menu-sub">
+                                        <div>
+                                            <a href="#"><i class="fa-solid fa-music"></i> Nhạc mới</a>
+                                        </div>
+                                        <div>
+                                            <a href=""><i class="fas icon-nav_label fa-icons"></i> Chủ đề và thể
+                                                loại</a>
+                                        </div>
+                                        <div>
+                                            <a href=""><i class="fas icon-nav_label fa-star"></i> Top 100</a>
+                                        </div>
+                                        <div>
+                                            <a href=""><i
+                                                    class="fas icon-nav_label icon_add_big fa-caret-square-right"></i>
+                                                MV</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="log-mz-list success">
+                                <p>Đăng nhập để khám phá playlist dành cho bạn</p>
+                                <button id="btn-mz-list" class="btn-mz-list login"><a href="../Login/index.html"
+                                        target="_blank">Đăng nhập</a></button>
+                                <span>Thoát</span>
+                            </div>
+                            <div id="nones">
+                                <button id="btn-mz-list" class="btn-mz-list"><a href="#" id="logins1">Đăng
+                                        nhập</a></button>
+                            </div>
+                            <hr>
+                            <div class="btn-create pc">
+                                <!-- <a class="sp" href="#"><i class="fa-solid fa-plus"></i></a> -->
+                                <a class="pc" href="#"><i class="fa-solid fa-plus"></i> Tạo playlist mới</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10 container-fluid">
+                <div class="box">
+                    <div class="search">
+                        <a href="#" class="director"><i class="fa-solid fa-arrow-right arrow"></i></a>
+                        <a href="#" class="director"><i class="fa-solid fa-arrow-left arrow"></i></a>
+                        <div class="icons">
+                            <button><i class="fa-solid fa-magnifying-glass arrow" id="btn-searcher"></i></button>
+                            <input type="text" id="searcher" placeholder="Tìm kiếm bài hát, nghệ sĩ, lời bài hát...">
+                        </div>
+                    </div>
+                    <div class="theme">
+                        <button class="arrow"><a href="#">Tải bản Windows</a></button>
+                        <a href="#"><i class="fa-solid fa-circle-up arrow"></i></a>
+                        <a href="#"><i class="bi bi-upload header__nav-icon arrow"></i></a>
+                        <a href="#"><i class="fa-solid fa-gear arrow"></i></a>
+                        <button class="arrow login"><a id="logins2">Đăng
+                                nhập</a></button>
+                        <button class="arrow"><a href="http://127.0.0.1:5500/Login/index.html">Đăng xuất</a></button>
+                    </div>
+                </div>
+                <div class="img-slider">
+                    <div>
+                        <img src="../image/1373a5b97f79d7f1af2a63839abf7ab9.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="../image/ac101853361fb4d99ec8b4b41439f05f.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="../image/da888d3aaa65f746ac409949bd9e6463.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="../image/b2c9f23b97e5586c0050fada86891c13.jpg" alt="">
+                    </div>
+                </div>
+                <div class="new">
+                    <h4>Thư viện </h4>
+                    <div class="selected">
+                        <div class="btn-all">
+                            <button class="all-music active" data="all">Tất cả</button>
+                            <button class="all-music" data="VN">Việt Nam</button>
+                            <button class="all-music" data="IN">Quốc tế</button>
+                        </div>
+                        <a href="">Tất cả ></a>
+                    </div>
+                    <div class="container text-left data-list" id="data-list">
+                        <div class="row align-items-center boxmusic">
+                            <!-- dữ liệu bài hát -->
+
+                            <!-- <div data="VN" class="VN">
+                                <a href="">
+                                    <div class="col-4 songer">
+                                        <div class="music-list-music container-music update-music">
+                                            <div class="container-namemusic">
+                                                <audio src="../List Music/BoXiBo-HoangThuyLinh-7702270.mp3"
+                                                    id="song"></audio>
+                                                <img class="pc" src="../Image music/boxibo.jpg" alt="">
+                                                <div class="music-list">
+                                                    <p>Bo Xi Bo</p>
+                                                    <p>Hoàng Thùy Linh</p>
+                                                </div>
+                                            </div>
+                                            <button class="right"><i class="fa-solid fa-ellipsis"></i></button>
+                                        </div>
+                                        <div class="music-list-music container-music update-music">
+                                            <div class="container-namemusic">
+                                                <audio src="../List Music/BoXiBo-HoangThuyLinh-7702270.mp3"
+                                                    id="song"></audio>
+                                                <img class="pc" src="../Image music/boxibo.jpg" alt="">
+                                                <div class="music-list">
+                                                    <p>Bo Xi Bo</p>
+                                                    <p>Hoàng Thùy Linh</p>
+                                                </div>
+                                            </div>
+                                            <button class="right"><i class="fa-solid fa-ellipsis"></i></button>
+                                        </div>
+                                        <div class="music-list-music container-music update-music">
+                                            <div class="container-namemusic">
+                                                <audio src="../List Music/BoXiBo-HoangThuyLinh-7702270.mp3"
+                                                    id="song"></audio>
+                                                <img class="pc" src="../Image music/boxibo.jpg" alt="">
+                                                <div class="music-list">
+                                                    <p>Bo Xi Bo</p>
+                                                    <p>Hoàng Thùy Linh</p>
+                                                </div>
+                                            </div>
+                                            <button class="right"><i class="fa-solid fa-ellipsis"></i></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div data="IN" class="VN">
+                                <a href="">
+                                    <div class="col-4 songer">
+                                        <div class="music-list-music container-music update-music">
+                                            <div class="container-namemusic">
+                                                <audio src="../List Music/BoXiBo-HoangThuyLinh-7702270.mp3"
+                                                    id="song"></audio>
+                                                <img class="pc" src="../Image music/boxibo.jpg" alt="">
+                                                <div class="music-list">
+                                                    <p>Bo Xi Bo</p>
+                                                    <p>Hoàng Thùy Linh</p>
+                                                </div>
+                                            </div>
+                                            <button class="right"><i class="fa-solid fa-ellipsis"></i></button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="new">Khám phá </h4>
+                    <div class="container-fluid container-box">
+                        <div class="transitions">
+                            <div class="transitions-image"> <a href=""><img src="../Chill/1.webp" alt=""></a></div>
+                            <p>Va vào những giai điệu V-pop</p>
+                            <div class="iconns">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-circle-play"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div class="transitions">
+                            <div class="transitions-image"><a href=""><img src="../Chill/2.webp" alt=""></a></div>
+                            <p>Giai điệu Guitar mang lại cảm giác yên <br>bình nhất cho bạn</p>
+                            <div class="iconns">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-circle-play"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div class="transitions">
+                            <div class="transitions-image"><a href=""><img src="../Chill/3.webp" alt=""></a></div>
+                            <p>Những bản EDM rực cháy</p>
+                            <div class="iconns">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-circle-play"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div class="transitions">
+                            <div class="transitions-image"><a href=""><img src="../Chill/4.webp" alt=""></a></div>
+                            <p>Những bản nhạc tạo thêm cảm hứng </p>
+                            <div class="iconns">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-circle-play"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <h4 class="new">Nhạc mới </h4>
+                    <div class="container-fluid container-box ">
+                        <div class="transitions images">
+                            <div class="transitions-image"><a href=""><img src="../Image music/The loai/Chill hits.webp"
+                                        alt=""> </a></div>
+                            <p>Nơi có những bản nhạc Chill nhất dành cho bạn</p>
+                            <div class="iconns">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-circle-play"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div class="transitions images">
+                            <div class="transitions-image"><a href=""><img src="../Image music/The loai/lofi.webp"
+                                        alt="">
+                                </a></div>
+                            <p>Những giai điệu lofi nhẹ nhàng, tình cảm</p>
+                            <div class="iconns">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-circle-play"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div class="transitions images">
+                            <div class="transitions-image"><a href=""><img src="../Image music/The loai/Piano.webp"
+                                        alt="">
+                                </a></div>
+                            <p>Cảm nhận sự yên bình cùng tiếng đàn piano</p>
+                            <div class="iconns">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-circle-play"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div class="transitions images">
+                            <div class="transitions-image"><a href=""><img src="../Image music/The loai/V-pop.webp"
+                                        alt=""></a></div>
+                            <p>Thả mình cùng những giai điệu V-pop nhẹ nhàng</p>
+                            <div class="iconns">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-circle-play"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div><br><br>
+                <div>
+                    <h4 class="new">Top 100 </h4>
+                    <div class="container-fluid container-box ">
+                        <div class="transitions">
+                            <div class="transitions-image"><a href="#"><img src="../Image music/Top100/Rap Viet.jpg"
+                                        alt="">
+                            </div>
+                            <p>Top Rap Việt</p>
+                            </a>
+                        </div>
+                        <div class="transitions">
+                            <div class="transitions-image"><a href="#"><img src="../Image music/Top100/VN.jpg" alt="">
+                            </div>
+                            <p>Top nhạc trẻ Việt Nam</p>
+                            </a>
+                        </div>
+                        <div class="transitions">
+                            <div class="transitions-image"><a href=""><img src="../Image music/Top100/US-UK.jpg" alt="">
+                            </div>
+                            <p>Top US-UK</p>
+                            </a>
+                        </div>
+                        <div class="transitions">
+                            <div class="transitions-image"><a href=""><img src="../Image music/Top100/Dance.jpg" alt="">
+                            </div>
+                            <p>Top Dance</p>
+                            </a>
+                        </div>
+                        <div class="transitions">
+                            <div class="transitions-image"><a href=""><img src="../Image music/Top100/Japan.jpg" alt="">
+                            </div>
+                            <p>Top nhạc nhật</p>
+                            </a>
+                        </div>
+                    </div>
+                </div><br>
+                <div>
+                    <h4 class="new">MV </h4>
+                    <div class="container-fluid container-box">
+                        <div class="transitions">
+                            <div class="transitions-image"><a href=""><img src="../Image music/Album/album.webp" alt="">
+                                </a></div>
+                            <p>Album</p>
+
+                        </div>
+                        <div class="transitions">
+                            <div class="transitions-image"><a href=""><img src="../Image music/Album/damtrongtim.webp"
+                                        alt=""></a></div>
+                            <p>Dằm trong tim</p>
+
+                        </div>
+                        <div class="transitions">
+                            <div class="transitions-image"><a href=""><img src="../Image music/Album/Khacviet.png"
+                                        alt="">
+                                </a></div>
+                            <p>Album Khắc Việt</p>
+
+                        </div>
+                        <div class="transitions">
+                            <div class="transitions-image"><a href=""><img src="../Image music/Album/Tonghaonhien.png"
+                                        alt=""> </a></div>
+                            <p>Album Tống Hạo Nhiên</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="container-donors">Đối tác âm nhạc</h4>
+                    <div class="donors">
+                        <div class="box-donors">
+                            <img src="../image/Doi tac/monstercat.png" alt="">
+                        </div>
+                        <div class="box-donors">
+                            <img src="../image/Doi tac//believe.png" alt="">
+                        </div>
+                        <div class="box-donors">
+                            <img src="../image/Doi tac/empire.png" alt="">
+                        </div>
+                        <div class="box-donors">
+                            <img src="../image/Doi tac/hikoon.png" alt="">
+                        </div>
+                        <div class="box-donors">
+                            <img src="../image/Doi tac/jsj.png" alt="">
+                        </div>
+                        <div class="box-donors">
+                            <img src="../image/Doi tac/universal-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer container-fluid">
+        <div class="container text-center">
+            <div class="row align-items-start control">
+                <div class="col songer">
+                    <div class="music-list-music container-music update-music">
+                        <div class="container-namemusic">
+                            <audio src="../List Music/BoXiBo-HoangThuyLinh-7702270.mp3" id="song"></audio>
+                            <img class="pc" src="../Image music/boxibo.jpg" alt="">
+                            <div class="music-list">
+                                <p id="name-music">Bo Xi Bo</p>
+                                <p id="name-human">Hoàng Thùy Linh</p>
+                            </div>
+                        </div>
+                        <button class="right"><i class="fa-solid fa-ellipsis"></i></button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="container-playmusic">
+                        <div class="play-music">
+                            <div><i class="fa-solid fa-shuffle music-shuffle"></i></div>
+                            <div><i class="fa-solid fa-caret-left next-back"></i></div>
+                            <div class="play-inner">
+                                <audio src="" id="auto-plays"></audio>
+                                <i class="fa-solid fa-pause play-icon"></i>
+                            </div>
+                            <div><i class="fa-solid fa-caret-right next-forward"></i></div>
+                            <div><i class="fa-solid fa-repeat music-repeat"></i></div>
+                        </div>
+                        <div class="music-control__progress">
+                            <span
+                                class="music-control__progress-time-start js__music-control__progress-time-start js__main-color time-start">
+                                10:00</span>
+                            <input id="progress" class="music-control__progress-input range" type="range" />
+
+                            <span
+                                class="music-control__progress-time-duration js__music-control__progress-time-duration js__main-color time-end">
+                                10:00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="volume">
+                        <div>
+                            <i class="fa-solid fa-video"></i>
+                        </div>
+                        <div><i class="fa-solid fa-microphone"></i></div>
+                        <div class="volume-icon">
+                            <i class="music-control__right-icon4 js__main-color fas fa-volume-down"></i>
+                            <i class="music-control__right-icon5 js__main-color fas fa-volume-mute mutes"></i>
+                        </div>
+                        <div>
+                            <div class="music-control__volume-progress">
+                                <input control id="progress1" class="music-control__volume-input" type="range" value="20"
+                                    step="1" min="0" max="100">
+                            </div>
+                        </div>
+                        <div>
+                            <i class="fa-sharp fa-regular fa-slider"></i>
+                        </div>
+                        <hr>
+                        <div>
+                            <i class="fa-solid fa-list"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./slick.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
